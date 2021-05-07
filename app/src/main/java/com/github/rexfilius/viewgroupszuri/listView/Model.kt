@@ -1,29 +1,36 @@
 package com.github.rexfilius.viewgroupszuri.listView
 
-data class ListItem(val text: String)
+import com.github.rexfilius.viewgroupszuri.R
 
-object ListItemData {
+data class FunFact(val name: String, val logo: Int, val fact: String)
+
+object FunFactData {
 
     val items = listOf(
-        ListItem("List Item 1"),
-        ListItem("List Item 2"),
-        ListItem("List Item 3"),
-        ListItem("List Item 4"),
-        ListItem("List Item 5"),
-        ListItem("List Item 6"),
-        ListItem("List Item 7"),
-        ListItem("List Item 8"),
-        ListItem("List Item 9"),
-        ListItem("List Item 10"),
-        ListItem("List Item 11"),
-        ListItem("List Item 12"),
-        ListItem("List Item 13"),
-        ListItem("List Item 14"),
-        ListItem("List Item 15"),
-        ListItem("List Item 16"),
-        ListItem("List Item 17"),
-        ListItem("List Item 18"),
-        ListItem("List Item 19"),
-        ListItem("List Item 20")
+        FunFact(
+            "Kotlin",
+            R.drawable.kotlin_logo,
+            "The name comes from Kotlin Island, near St Petersburg. Andrey Breslav mentioned that the team decided to name it after an island, just like Java was named after the Indonesian island of Java."
+        ),
+        FunFact(
+            "Java",
+            R.drawable.java_logo,
+            "The language was initially called Oak after an oak tree that stood outside Gosling's office. Later the project went by the name Green and was finally renamed Java, from Java coffee, a type of coffee from Indonesia."
+        ),
+        FunFact(
+            "Python",
+            R.drawable.python_logo,
+            "Python's name is derived from the British comedy group Monty Python, whom Python creator Guido van Rossum enjoyed while developing the language."
+        ),
+        FunFact(
+            "JavaScript",
+            R.drawable.js_logo,
+            "The name JavaScript came from Netscape's support of Java applets within its browser."
+        ),
+        FunFact(
+            "PHP",
+            R.drawable.php_logo,
+            "PHP originally stood for Personal Home Page, but it now stands for the recursive initialism PHP: Hypertext Preprocessor"
+        )
     )
 }

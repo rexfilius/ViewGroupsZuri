@@ -18,7 +18,7 @@ class ListActivity : AppCompatActivity() {
     }
 
     private fun setupAdapter() {
-        listItemAdapter = ListItemAdapter(this, ListItemData.items)
+        listItemAdapter = ListItemAdapter(this, FunFactData.items)
         binding.listView.adapter = listItemAdapter
     }
 
